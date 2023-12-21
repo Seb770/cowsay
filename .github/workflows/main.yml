@@ -1,0 +1,19 @@
+---
+
+name: Workflow de test
+defaults:
+  run:
+    working-directory: cowsay
+on:
+  issues:
+    type: [opened]
+
+jobs:
+  mon-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: installer cowsay
+      uses: mscoutermarsch/cowsay-action@master
+      with:
+        text: 'Hello DevOps'
+        color: 'pink'
