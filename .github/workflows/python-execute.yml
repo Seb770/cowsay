@@ -2,8 +2,8 @@
 
 name: Executer un script python
 on:
-  workflow_dispatch
-  push
+  - workflow_dispatch
+  - push
 #  issues:
 #    type: [opened]
 
