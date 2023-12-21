@@ -15,7 +15,7 @@ jobs:
     - name: installer cowsay
       uses: mscoutermarsh/cowsays-action@master
       with:
-        text: 'Hello DevOps ${{ github.event.issue.body }}'
+        text: 'Hello DevOps ${{ github.event.issue.title }}'
         color: 'pink'
       env:
         NUMBER: ${{ github.event.issue.number }}
