@@ -1,0 +1,17 @@
+---
+
+name: Executer un script python
+on:
+  workflows-dispatch
+#  issues:
+#    type: [opened]
+
+jobs:
+  mon-test:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: checkout code python
+      uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          vache.py
