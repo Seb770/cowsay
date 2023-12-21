@@ -3,6 +3,7 @@
 name: Executer un script python
 on:
   workflow_dispatch
+  push
 #  issues:
 #    type: [opened]
 
@@ -17,4 +18,4 @@ jobs:
           vache.py
     - name: execute python script
       run: |
-          vache.py
+         ./vache.py
