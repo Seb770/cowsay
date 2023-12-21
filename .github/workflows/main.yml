@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: installer cowsay
-      uses: mscoutermarsch/cowsay-action@master
+      uses: mscoutermarsh/cowsays-action@master
       with:
         text: 'Hello DevOps'
         color: 'pink'
